@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2995)
+    (start_pass_no 1605)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 3.0)
+      (against_preferred_direction_trace_costs 2.8)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.5)
+      (against_preferred_direction_trace_costs 1.6)
     )
   )
   (rule
@@ -66,8 +66,8 @@
     VCC GND "Net-(C2-Pad1)" +3V3 "Net-(C4-Pad2)" "Net-(C5-Pad2)" "Net-(C6-Pad2)" "Net-(D1-Pad2)"
     "Net-(D2-Pad2)" "Net-(D3-Pad2)" /VertFailSafe /VertValue /HoriFailSafe /HoriValue /RST /MISO
     /SCK /MOSI /SDA /SCL /0RX /1TX /LED1 /LED2
-    /LED3 /BTNT /BTNL /BTNR /BTNB "Net-(U2-Pad1)" "Net-(U2-Pad32)" "Net-(D4-Pad2)"
-    "Net-(J5-Pad5)" "Net-(J5-Pad4)" "Net-(J5-Pad3)" "Net-(J5-Pad2)" "Net-(J5-Pad1)" /ADDR /LED4
+    /LED3 /BTNT /BTNL /BTNR /BTNB "Net-(U2-Pad1)" "Net-(D4-Pad2)" /ADDR
+    /LED4 "/JOY_PUSH"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

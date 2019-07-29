@@ -15,14 +15,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x06 J1
+L Connector_Generic:Conn_01x08 J1
 U 1 1 5D25E3D7
-P 2650 3750
-F 0 "J1" H 2568 4167 50  0000 C CNN
-F 1 "Joystick" H 2568 4076 50  0000 C CNN
-F 2 "footprints:AdafruitJoystick" H 2650 3750 50  0001 C CNN
-F 3 "~" H 2650 3750 50  0001 C CNN
-	1    2650 3750
+P 2650 3850
+F 0 "J1" H 2600 4350 50  0000 C CNN
+F 1 "Joystick" H 2600 4250 50  0000 C CNN
+F 2 "footprints:PS4tJoystick" H 2650 3850 50  0001 C CNN
+F 3 "~" H 2650 3850 50  0001 C CNN
+	1    2650 3850
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -39,12 +39,12 @@ $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5D25F09C
-P 2900 4050
-F 0 "#PWR0101" H 2900 3800 50  0001 C CNN
-F 1 "GND" H 2905 3877 50  0000 C CNN
-F 2 "" H 2900 4050 50  0001 C CNN
-F 3 "" H 2900 4050 50  0001 C CNN
-	1    2900 4050
+P 2900 4300
+F 0 "#PWR0101" H 2900 4050 50  0001 C CNN
+F 1 "GND" H 2905 4127 50  0000 C CNN
+F 2 "" H 2900 4300 50  0001 C CNN
+F 3 "" H 2900 4300 50  0001 C CNN
+	1    2900 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -172,17 +172,6 @@ F 3 "" H 2000 6100 50  0001 C CNN
 $EndComp
 Text Label 2800 6100 0    50   ~ 0
 LED3
-$Comp
-L MCU_Microchip_ATmega:ATmega328P-MU U2
-U 1 1 5D26AB1A
-P 5850 3800
-F 0 "U2" H 6100 2350 50  0000 C CNN
-F 1 "ATmega328P-MU" H 6350 2250 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 5850 3800 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5850 3800 50  0001 C CNN
-	1    5850 3800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C5
 U 1 1 5D26CD6D
@@ -483,7 +472,7 @@ U 1 1 5D2AEE9A
 P 8950 3500
 F 0 "J3" H 8868 3817 50  0000 C CNN
 F 1 "Conn_01x04" H 8868 3726 50  0000 C CNN
-F 2 "Connector:NS-Tech_Grove_1x04_P2mm_Vertical" H 8950 3500 50  0001 C CNN
+F 2 "footprints:NS-Tech_Grove_1x04_P2mm_Horizontal" H 8950 3500 50  0001 C CNN
 F 3 "~" H 8950 3500 50  0001 C CNN
 	1    8950 3500
 	-1   0    0    -1  
@@ -546,7 +535,6 @@ Text Label 6450 4300 0    50   ~ 0
 0RX
 Text Label 6450 4400 0    50   ~ 0
 1TX
-NoConn ~ 6450 4500
 NoConn ~ 6450 4600
 Wire Wire Line
 	2000 5200 2200 5200
@@ -604,7 +592,7 @@ U 1 1 5D2E3CD5
 P 3900 4800
 F 0 "SW1" H 3750 4950 50  0000 C CNN
 F 1 "SW_Push" H 4100 4950 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH-12mm" H 3900 5000 50  0001 C CNN
+F 2 "footprints:SW_Center_PUSH-12mm" H 3900 5000 50  0001 C CNN
 F 3 "~" H 3900 5000 50  0001 C CNN
 	1    3900 4800
 	1    0    0    -1  
@@ -742,28 +730,6 @@ F 3 "" H 7600 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J5
-U 1 1 5D337E92
-P 1150 3750
-F 0 "J5" H 1068 4167 50  0000 C CNN
-F 1 "FlatCable" H 1068 4076 50  0000 C CNN
-F 2 "footprints:1x05-1MP_P0.50mm_Horizontal" H 1150 3750 50  0001 C CNN
-F 3 "~" H 1150 3750 50  0001 C CNN
-	1    1150 3750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J6
-U 1 1 5D341A0D
-P 1550 3750
-F 0 "J6" H 1630 3792 50  0000 L CNN
-F 1 "Conn_01x05" H 1630 3701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1550 3750 50  0001 C CNN
-F 3 "~" H 1550 3750 50  0001 C CNN
-	1    1550 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C7
 U 1 1 5D353B45
 P 3900 5000
@@ -800,7 +766,7 @@ U 1 1 5D36B867
 P 3900 5550
 F 0 "SW2" H 3750 5700 50  0000 C CNN
 F 1 "SW_Push" H 4100 5700 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH-12mm" H 3900 5750 50  0001 C CNN
+F 2 "footprints:SW_Center_PUSH-12mm" H 3900 5750 50  0001 C CNN
 F 3 "~" H 3900 5750 50  0001 C CNN
 	1    3900 5550
 	1    0    0    -1  
@@ -849,7 +815,7 @@ U 1 1 5D36D8B0
 P 3900 6300
 F 0 "SW3" H 3750 6450 50  0000 C CNN
 F 1 "SW_Push" H 4100 6450 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH-12mm" H 3900 6500 50  0001 C CNN
+F 2 "footprints:SW_Center_PUSH-12mm" H 3900 6500 50  0001 C CNN
 F 3 "~" H 3900 6500 50  0001 C CNN
 	1    3900 6300
 	1    0    0    -1  
@@ -898,7 +864,7 @@ U 1 1 5D371214
 P 3900 7050
 F 0 "SW4" H 3750 7200 50  0000 C CNN
 F 1 "SW_Push" H 4100 7200 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH-12mm" H 3900 7250 50  0001 C CNN
+F 2 "footprints:SW_Center_PUSH-12mm" H 3900 7250 50  0001 C CNN
 F 3 "~" H 3900 7250 50  0001 C CNN
 	1    3900 7050
 	1    0    0    -1  
@@ -941,20 +907,28 @@ Wire Wire Line
 Connection ~ 3700 7250
 Wire Wire Line
 	3700 7250 3700 7350
+Wire Wire Line
+	2900 4300 2900 4250
+Wire Wire Line
+	2900 4250 2850 4250
+Connection ~ 2900 4250
+Wire Wire Line
+	2900 4250 2900 4050
 $Comp
-L Connector_Generic:Conn_01x05 J7
-U 1 1 5D3B39BB
-P 1150 3750
-F 0 "J7" H 1068 4167 50  0000 C CNN
-F 1 "FlatCable" H 1068 4076 50  0000 C CNN
-F 2 "footprints:1x05-1MP_P0.50mm_Horizontal" H 1150 3750 50  0001 C CNN
-F 3 "~" H 1150 3750 50  0001 C CNN
-	1    1150 3750
-	-1   0    0    1   
+L MCU_Microchip_ATmega:ATmega328P-MU U2
+U 1 1 5D26AB1A
+P 5850 3800
+F 0 "U2" H 6100 2350 50  0000 C CNN
+F 1 "ATmega328P-MU" H 6350 2250 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 5850 3800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5850 3800 50  0001 C CNN
+	1    5850 3800
+	1    0    0    -1  
 $EndComp
-Connection ~ 1350 3950
-Connection ~ 1350 3850
-Connection ~ 1350 3750
-Connection ~ 1350 3650
-Connection ~ 1350 3550
+Text Label 6450 4500 0    50   ~ 0
+JOY_PUSH
+Text Label 3000 4150 0    50   ~ 0
+JOY_PUSH
+Wire Wire Line
+	3000 4150 2850 4150
 $EndSCHEMATC
