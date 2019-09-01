@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:WiredControllerPcb-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -691,7 +691,7 @@ F 3 "" H 2000 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2800 6600 0    50   ~ 0
-LED3
+LED4
 Wire Wire Line
 	2000 6600 2200 6600
 $Comp
