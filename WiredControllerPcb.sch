@@ -288,12 +288,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0109
 U 1 1 5D28015F
-P 4950 2600
-F 0 "#PWR0109" H 4950 2350 50  0001 C CNN
-F 1 "GND" H 4955 2427 50  0000 C CNN
-F 2 "" H 4950 2600 50  0001 C CNN
-F 3 "" H 4950 2600 50  0001 C CNN
-	1    4950 2600
+P 4750 2600
+F 0 "#PWR0109" H 4750 2350 50  0001 C CNN
+F 1 "GND" H 4755 2427 50  0000 C CNN
+F 2 "" H 4750 2600 50  0001 C CNN
+F 3 "" H 4750 2600 50  0001 C CNN
+	1    4750 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -421,7 +421,7 @@ U 1 1 5D28EE0F
 P 8950 2450
 F 0 "J2" H 8868 2867 50  0000 C CNN
 F 1 "Conn_01x06" H 8868 2776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical_SMD" H 8950 2450 50  0001 C CNN
+F 2 "footprints:2x03_P2.54mm_Pads" H 8950 2450 50  0001 C CNN
 F 3 "~" H 8950 2450 50  0001 C CNN
 	1    8950 2450
 	-1   0    0    -1  
@@ -513,9 +513,9 @@ Text Label 6450 3500 0    50   ~ 0
 HoriValue
 Text Label 6450 3600 0    50   ~ 0
 HoriFailSafe
-Text Label 6450 3700 0    50   ~ 0
+Text Label 5250 2800 2    50   ~ 0
 VertValue
-Text Label 6450 3800 0    50   ~ 0
+Text Label 5250 2900 2    50   ~ 0
 VertFailSafe
 Wire Wire Line
 	6450 3200 7350 3200
@@ -529,7 +529,7 @@ Text Label 6450 2700 0    50   ~ 0
 LED1
 Text Label 6450 2800 0    50   ~ 0
 LED2
-Text Label 5250 2800 2    50   ~ 0
+Text Label 6450 3700 0    50   ~ 0
 LED3
 Text Label 6450 4300 0    50   ~ 0
 0RX
@@ -626,7 +626,7 @@ U 1 1 5D30736F
 P 8950 4450
 F 0 "J4" H 8868 4867 50  0000 C CNN
 F 1 "Conn_01x06" H 8868 4776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical_SMD" H 8950 4450 50  0001 C CNN
+F 2 "footprints:2x03_P2.54mm_Pads" H 8950 4450 50  0001 C CNN
 F 3 "~" H 8950 4450 50  0001 C CNN
 	1    8950 4450
 	-1   0    0    -1  
@@ -666,7 +666,7 @@ Wire Wire Line
 	9150 4550 9350 4550
 Text Label 6450 2600 0    50   ~ 0
 ADDR
-Text Label 5250 2900 2    50   ~ 0
+Text Label 6450 3800 0    50   ~ 0
 LED4
 $Comp
 L Device:LED D4
@@ -931,4 +931,6 @@ Text Label 3000 4150 0    50   ~ 0
 JOY_PUSH
 Wire Wire Line
 	3000 4150 2850 4150
+Wire Wire Line
+	4750 2600 4950 2600
 $EndSCHEMATC
