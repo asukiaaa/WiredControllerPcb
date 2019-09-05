@@ -260,7 +260,7 @@ U 1 1 5D275DE9
 P 7350 3350
 F 0 "Y1" V 7000 3300 50  0000 L CNN
 F 1 "8MHz" V 7100 3250 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm" H 7350 3350 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_EuroQuartz_MJ-4Pin_5.0x3.2mm" H 7350 3350 50  0001 C CNN
 F 3 "~" H 7350 3350 50  0001 C CNN
 	1    7350 3350
 	0    1    1    0   
