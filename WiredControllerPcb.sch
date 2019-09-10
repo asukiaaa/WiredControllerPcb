@@ -513,9 +513,9 @@ Text Label 6450 3500 0    50   ~ 0
 HoriValue
 Text Label 6450 3600 0    50   ~ 0
 HoriFailSafe
-Text Label 5250 2800 2    50   ~ 0
+Text Label 6450 3700 0    50   ~ 0
 VertValue
-Text Label 5250 2900 2    50   ~ 0
+Text Label 6450 3800 0    50   ~ 0
 VertFailSafe
 Wire Wire Line
 	6450 3200 7350 3200
@@ -529,12 +529,8 @@ Text Label 6450 2700 0    50   ~ 0
 LED1
 Text Label 6450 2800 0    50   ~ 0
 LED2
-Text Label 6450 3700 0    50   ~ 0
-LED3
 Text Label 6450 4300 0    50   ~ 0
-0RX
-Text Label 6450 4400 0    50   ~ 0
-1TX
+LED3
 NoConn ~ 6450 4600
 Wire Wire Line
 	2000 5200 2200 5200
@@ -620,53 +616,9 @@ Text Label 6450 4900 0    50   ~ 0
 BTNR
 Text Label 6450 5000 0    50   ~ 0
 BTNB
-$Comp
-L Connector_Generic:Conn_01x06 J4
-U 1 1 5D30736F
-P 8950 4450
-F 0 "J4" H 8868 4867 50  0000 C CNN
-F 1 "Conn_01x06" H 8868 4776 50  0000 C CNN
-F 2 "footprints:2x03_P2.54mm_Pads" H 8950 4450 50  0001 C CNN
-F 3 "~" H 8950 4450 50  0001 C CNN
-	1    8950 4450
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0121
-U 1 1 5D3078A4
-P 9350 4550
-F 0 "#PWR0121" H 9350 4400 50  0001 C CNN
-F 1 "VCC" H 9367 4723 50  0000 C CNN
-F 2 "" H 9350 4550 50  0001 C CNN
-F 3 "" H 9350 4550 50  0001 C CNN
-	1    9350 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 5D309169
-P 9150 4750
-F 0 "#PWR0122" H 9150 4500 50  0001 C CNN
-F 1 "GND" H 9155 4577 50  0000 C CNN
-F 2 "" H 9150 4750 50  0001 C CNN
-F 3 "" H 9150 4750 50  0001 C CNN
-	1    9150 4750
-	1    0    0    -1  
-$EndComp
-Text Label 9150 4250 0    50   ~ 0
-RST
-Text Label 9150 4450 0    50   ~ 0
-1TX
-Text Label 9150 4350 0    50   ~ 0
-0RX
-Wire Wire Line
-	9150 4650 9150 4750
-Connection ~ 9150 4750
-Wire Wire Line
-	9150 4550 9350 4550
 Text Label 6450 2600 0    50   ~ 0
 ADDR
-Text Label 6450 3800 0    50   ~ 0
+Text Label 6450 4400 0    50   ~ 0
 LED4
 $Comp
 L Device:LED D4
@@ -933,4 +885,6 @@ Wire Wire Line
 	3000 4150 2850 4150
 Wire Wire Line
 	4750 2600 4950 2600
+NoConn ~ 5250 2800
+NoConn ~ 5250 2900
 $EndSCHEMATC
