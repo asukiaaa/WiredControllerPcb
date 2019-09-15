@@ -173,46 +173,6 @@ $EndComp
 Text Label 2800 6100 0    50   ~ 0
 LED3
 $Comp
-L Device:C C5
-U 1 1 5D26CD6D
-P 7800 3200
-F 0 "C5" V 7700 3300 50  0000 C CNN
-F 1 "12pf" V 7639 3200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7838 3050 50  0001 C CNN
-F 3 "~" H 7800 3200 50  0001 C CNN
-	1    7800 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 5D26D0F2
-P 7800 3500
-F 0 "C6" V 7700 3600 50  0000 C CNN
-F 1 "12pf" V 7639 3500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7838 3350 50  0001 C CNN
-F 3 "~" H 7800 3500 50  0001 C CNN
-	1    7800 3500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5D26F1A4
-P 8050 3750
-F 0 "#PWR0106" H 8050 3500 50  0001 C CNN
-F 1 "GND" H 8055 3577 50  0000 C CNN
-F 2 "" H 8050 3750 50  0001 C CNN
-F 3 "" H 8050 3750 50  0001 C CNN
-	1    8050 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 3200 7950 3200
-Wire Wire Line
-	7950 3500 8050 3500
-Connection ~ 8050 3500
-Wire Wire Line
-	8050 3500 8050 3200
-$Comp
 L power:GND #PWR0107
 U 1 1 5D2707C0
 P 5850 5300
@@ -254,37 +214,6 @@ F 3 "~" H 5100 2600 50  0001 C CNN
 	1    5100 2600
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:Crystal_GND24 Y1
-U 1 1 5D275DE9
-P 7350 3350
-F 0 "Y1" V 7000 3300 50  0000 L CNN
-F 1 "8MHz" V 7100 3250 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_EuroQuartz_MJ-4Pin_5.0x3.2mm" H 7350 3350 50  0001 C CNN
-F 3 "~" H 7350 3350 50  0001 C CNN
-	1    7350 3350
-	0    1    1    0   
-$EndComp
-Connection ~ 7350 3200
-Connection ~ 7350 3500
-Wire Wire Line
-	7050 3500 7350 3500
-Wire Wire Line
-	8050 3500 8050 3700
-Wire Wire Line
-	7350 3200 7650 3200
-Wire Wire Line
-	7350 3500 7650 3500
-Wire Wire Line
-	7150 3700 7550 3700
-Connection ~ 8050 3700
-Wire Wire Line
-	8050 3700 8050 3750
-Wire Wire Line
-	7550 3350 7550 3700
-Connection ~ 7550 3700
-Wire Wire Line
-	7550 3700 8050 3700
 $Comp
 L power:GND #PWR0109
 U 1 1 5D28015F
@@ -426,11 +355,11 @@ F 3 "~" H 8950 2450 50  0001 C CNN
 	1    8950 2450
 	-1   0    0    -1  
 $EndComp
-Text Label 9150 2250 0    50   ~ 0
+Text Label 9150 2550 0    50   ~ 0
 MOSI
 Text Label 9150 2450 0    50   ~ 0
 SCK
-Text Label 9150 2550 0    50   ~ 0
+Text Label 9150 2250 0    50   ~ 0
 MISO
 Text Label 9150 2650 0    50   ~ 0
 RST
@@ -517,20 +446,6 @@ Text Label 6450 3700 0    50   ~ 0
 VertValue
 Text Label 6450 3800 0    50   ~ 0
 VertFailSafe
-Wire Wire Line
-	6450 3200 7350 3200
-Wire Wire Line
-	7050 3300 7050 3500
-Wire Wire Line
-	6450 3300 7050 3300
-Wire Wire Line
-	7150 3350 7150 3700
-Text Label 6450 2700 0    50   ~ 0
-LED1
-Text Label 6450 2800 0    50   ~ 0
-LED2
-Text Label 6450 4300 0    50   ~ 0
-LED3
 NoConn ~ 6450 4600
 Wire Wire Line
 	2000 5200 2200 5200
@@ -618,8 +533,6 @@ Text Label 6450 5000 0    50   ~ 0
 BTNB
 Text Label 6450 2600 0    50   ~ 0
 ADDR
-Text Label 6450 4400 0    50   ~ 0
-LED4
 $Comp
 L Device:LED D4
 U 1 1 5D328A2F
@@ -886,5 +799,15 @@ Wire Wire Line
 Wire Wire Line
 	4750 2600 4950 2600
 NoConn ~ 5250 2800
+Text Label 6450 4400 0    50   ~ 0
+LED4
+Text Label 6450 4300 0    50   ~ 0
+LED3
+Text Label 6450 2800 0    50   ~ 0
+LED2
+Text Label 6450 2700 0    50   ~ 0
+LED1
 NoConn ~ 5250 2900
+NoConn ~ 6450 3200
+NoConn ~ 6450 3300
 $EndSCHEMATC
