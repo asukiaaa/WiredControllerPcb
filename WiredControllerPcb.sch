@@ -882,4 +882,43 @@ Wire Wire Line
 Wire Wire Line
 	8050 3700 8000 3700
 Connection ~ 8050 3400
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5D81B9BA
+P 8950 4300
+F 0 "J4" H 8868 4617 50  0000 C CNN
+F 1 "Conn_01x04" H 8868 4526 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 8950 4300 50  0001 C CNN
+F 3 "~" H 8950 4300 50  0001 C CNN
+	1    8950 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5D81B9C0
+P 9150 4500
+F 0 "#PWR0121" H 9150 4250 50  0001 C CNN
+F 1 "GND" H 9155 4327 50  0000 C CNN
+F 2 "" H 9150 4500 50  0001 C CNN
+F 3 "" H 9150 4500 50  0001 C CNN
+	1    9150 4500
+	1    0    0    -1  
+$EndComp
+Text Label 9150 4300 0    50   ~ 0
+SDA
+Text Label 9150 4200 0    50   ~ 0
+SCL
+$Comp
+L power:VDC #PWR0122
+U 1 1 5D81B9C8
+P 9400 4400
+F 0 "#PWR0122" H 9400 4300 50  0001 C CNN
+F 1 "VDC" H 9400 4675 50  0000 C CNN
+F 2 "" H 9400 4400 50  0001 C CNN
+F 3 "" H 9400 4400 50  0001 C CNN
+	1    9400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4400 9400 4400
 $EndSCHEMATC
