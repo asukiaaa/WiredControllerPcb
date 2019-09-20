@@ -904,10 +904,8 @@ F 3 "" H 9150 4500 50  0001 C CNN
 	1    9150 4500
 	1    0    0    -1  
 $EndComp
-Text Label 9150 4300 0    50   ~ 0
-SDA
-Text Label 9150 4200 0    50   ~ 0
-SCL
+Wire Wire Line
+	9150 4400 9400 4400
 $Comp
 L power:VDC #PWR0122
 U 1 1 5D81B9C8
@@ -919,6 +917,47 @@ F 3 "" H 9400 4400 50  0001 C CNN
 	1    9400 4400
 	1    0    0    -1  
 $EndComp
+Text Label 9150 4200 0    50   ~ 0
+SCL
+Text Label 9150 4300 0    50   ~ 0
+SDA
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5D85B462
+P 8950 5150
+F 0 "J5" H 8868 5467 50  0000 C CNN
+F 1 "Conn_01x04" H 8868 5376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8950 5150 50  0001 C CNN
+F 3 "~" H 8950 5150 50  0001 C CNN
+	1    8950 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5D85B468
+P 9150 5350
+F 0 "#PWR0125" H 9150 5100 50  0001 C CNN
+F 1 "GND" H 9155 5177 50  0000 C CNN
+F 2 "" H 9150 5350 50  0001 C CNN
+F 3 "" H 9150 5350 50  0001 C CNN
+	1    9150 5350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9150 4400 9400 4400
+	9150 5250 9400 5250
+$Comp
+L power:VDC #PWR0126
+U 1 1 5D85B46F
+P 9400 5250
+F 0 "#PWR0126" H 9400 5150 50  0001 C CNN
+F 1 "VDC" H 9400 5525 50  0000 C CNN
+F 2 "" H 9400 5250 50  0001 C CNN
+F 3 "" H 9400 5250 50  0001 C CNN
+	1    9400 5250
+	1    0    0    -1  
+$EndComp
+Text Label 9150 5050 0    50   ~ 0
+SCL
+Text Label 9150 5150 0    50   ~ 0
+SDA
 $EndSCHEMATC
