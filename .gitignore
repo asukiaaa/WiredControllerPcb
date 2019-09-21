@@ -26,3 +26,5 @@ fp-info-cache
 # Exported BOM files
 *.xml
 
+# Exported gerber files
+gerber_to_order/
