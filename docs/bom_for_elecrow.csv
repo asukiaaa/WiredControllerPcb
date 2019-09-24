@@ -1,0 +1,12 @@
+Name,Designator,Qty,Url,Memo,MPN
+0603 0.1uf,"C10,C9,C8,C7,C4",5,,I don’t mind vendor,CC0603KRX7R9BB104
+0603 1k,"R1,R2,R3,R4,R5,R6,R7,R8",6,,I don’t mind vendor,RC0603JR-071KL
+0603 LED,"D1,D2,D3,D4",4,,I don’t mind vendor,17-215SYGC/S530-E2/TR8
+0603 1uf,C1,1,,I don’t mind vendor,CC0603KRX7R8BB105
+0603 10nf,C2,1,,I don’t mind vendor,CC0603KRX7R9BB103
+0603 2.2uf,C3,1,,I don’t mind vendor,CC0603KRX7R6BB225
+PS4 Joystick 2 stick set,J1,1 stick of 1 set,https://ja.aliexpress.com/item/32796315112.html,I don’t mind vendor,
+Grove Horizontal Connector,J3,1,"https://ja.aliexpress.com/item/32653841632.html?algo_pvid=97d5359e-290b-4563-938a-0a34cdc263bf&algo_expid=97d5359e-290b-4563-938a-0a34cdc263bf-10&btsid=0d7b7e43-a093-44b8-b4e3-00ce006ba384&ws_ab_test=searchweb0_0,searchweb201602_10,searchweb201603_53",I don’t mind vendor,
+3V3 Regulator LP2985-33DBVR,U1,1,https://www.digikey.jp/product-detail/en/texas-instruments/LP2985-33DBVR/296-18476-1-ND/809911,I don’t mind vendor,LP2985-33DBVR
+ATMEGA328P-MU,U2,1,https://www.digikey.jp/product-detail/en/microchip-technology/ATMEGA328P-MUR/ATMEGA328P-MURCT-ND/3440953,I don’t mind vendor,
+Push switch 12mm with black cap,"SW1,SW2,SW3,SW4",4,https://ja.aliexpress.com/item/32806223591.html?gps-id=pcDetailBottomMoreOtherSeller&scm=1007.13338.136569.000000000000000&scm_id=1007.13338.136569.000000000000000&scm-url=1007.13338.136569.000000000000000&pvid=249ce76e-f5b2-441b-b36e-3205b0dc3cc8,I don’t mind vendor,
