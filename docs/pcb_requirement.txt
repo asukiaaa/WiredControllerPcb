@@ -1,0 +1,8 @@
+Layer--2layers
+PCB Thickness--1.6mm
+Dimensions--90mm * 50mm
+Castellated Hole--No
+PCB Color--White
+Surface Finish--HASL Lead Free
+Copper Weight--1oz
+Different Design:--1
