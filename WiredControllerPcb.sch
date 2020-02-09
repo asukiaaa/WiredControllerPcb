@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:WiredControllerPcb-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -743,7 +742,7 @@ Connection ~ 2900 4250
 Wire Wire Line
 	2900 4250 2900 4050
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-MU U2
+L WiredControllerPcb-rescue:ATmega328P-MU-MCU_Microchip_ATmega U2
 U 1 1 5D26AB1A
 P 5850 3800
 F 0 "U2" H 6100 2350 50  0000 C CNN
@@ -960,4 +959,22 @@ Text Label 9150 5050 0    50   ~ 0
 SCL
 Text Label 9150 5150 0    50   ~ 0
 SDA
+$Comp
+L Device:R R9
+U 1 1 5E407ED2
+P 7850 4050
+F 0 "R9" V 7750 4050 50  0000 C CNN
+F 1 "10k" V 7850 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 4050 50  0001 C CNN
+F 3 "~" H 7850 4050 50  0001 C CNN
+	1    7850 4050
+	0    1    1    0   
+$EndComp
+Text Label 7700 4050 2    50   ~ 0
+RST
+Wire Wire Line
+	8000 4050 8050 4050
+Wire Wire Line
+	8050 4050 8050 3700
+Connection ~ 8050 3700
 $EndSCHEMATC
